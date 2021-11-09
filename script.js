@@ -28,7 +28,7 @@ $(document).ready(function () {
 })
 function getNextCookieValue() {
     
-    for (var i = 1; getCookie(i) == "undefined"; i++) {
+    for (var i = 0; getCookie(i) != "undefined"; i++) {
         
     }
     i++;
