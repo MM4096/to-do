@@ -42,6 +42,6 @@ function newTime() {
     var name = $("#name").val();
     console.log(name);
     var newCookie = parseInt(getNextCookieValue());
-    console.log("done!")
+    console.log("done!");
     setCookie(newCookie, date + "/" + time + "/" + name + "/", 365);
 }
