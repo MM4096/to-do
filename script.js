@@ -27,12 +27,12 @@ $(document).ready(function () {
     
 })
 function getNextCookieValue() {
-    var cookieValue
+    
     for (var i = 1; getCookie(i) == "undefined"; i++) {
-        cookieValue = i;
+        
     }
-    cookieValue++;
-    return cookieValue; 
+    i++;
+    return i; 
 }
 function newTime() {
     var date = $("#date").val();
@@ -41,7 +41,7 @@ function newTime() {
     console.log(time);
     var name = $("#name").val();
     console.log(name);
-    var newCookie = getNextCookieValue();
+    var newCookie = parseInt(getNextCookieValue());
     console.log("done!")
     setCookie(newCookie, date + "/" + time + "/" + name + "/", 365);
 }
