@@ -32,7 +32,7 @@ function getNextCookieValue() {
         cookieValue = i;
     }
     cookieValue++;
-    return cookieValue;
+    return cookieValue; 
 }
 function newTime() {
     var date = $("#date").val();
